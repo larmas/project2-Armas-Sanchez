@@ -1,4 +1,4 @@
-package pathagon;
+package src;
 
 import java.util.Arrays;
 
