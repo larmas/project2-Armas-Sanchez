@@ -21,6 +21,12 @@ public class StatePathagon implements AdversarySearchState {
 
 	}
 
+	public int[][] board(){
+
+		return board;
+
+	}
+
 	public boolean isMax(){
 
 		return max;
@@ -58,5 +64,15 @@ public class StatePathagon implements AdversarySearchState {
 
 		return res;
 
+	}
+
+	public void printBoard(){
+		System.out.println("Tablero \n");
+		for (int i=0; i<this.board.length; i++){
+			for (int j=0; j<this.board.length){
+				System.out.print(" | "+this.board[i][j]);
+			}
+			System.out.print(" | \n");
+		}
 	}
 }
